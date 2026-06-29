@@ -146,13 +146,17 @@
       }
       .trend-chart {
         width: 100%;
+        height: 120px;
         background: transparent;
         border-radius: 20px;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .trend-chart svg {
         width: 100%;
-        height: 90px;
+        height: 80%;
         display: block;
       }
       .trend-area {
@@ -163,6 +167,7 @@
         stroke-width: 3.5;
         stroke-linecap: round;
         stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
       }
       .trend-green,
       .trend-orange,
@@ -256,12 +261,12 @@
               <div class="metric-label">Revenue</div>
               <div class="metric-value">$2.4M</div>
             </div>
-            <div class="metric-chip trend-up"><span>↗</span> 15%</div>
+            <div class="metric-chip trend-up"><span>↗</span> 12%</div>
           </div>
           <div class="sparkline trend-chart">
-            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
-              <path d="M12 78 C72 44 110 68 162 44 C214 20 246 68 292 38 C328 16 340 30 356 18 L356 82 L12 82 Z" class="trend-area trend-green-area" />
-              <path d="M12 78 C72 44 110 68 162 44 C214 20 246 68 292 38 C328 16 340 30 356 18" class="trend-path trend-green" />
+            <svg viewBox="0 0 322.71 101.58" preserveAspectRatio="none">
+              <path d="M2,82.03c13.47-8.83,29.2-17.18,45.84-15.32,24.55,2.59,38.99,28.47,62.92,32.42,16.65,2.85,30.65-8.27,41.62-19.9,14.33-14.43,30.32-38.34,52.93-28.5,12.73,5.11,25.39,15.67,40.01,14.53,20.3-1.71,36.86-23.42,48.71-38.36,7.34-9.56,16.65-17.68,26.69-24.89" class="trend-path trend-green" />
+              <path d="M2,82.03c13.47-8.83,29.2-17.18,45.84-15.32,24.55,2.59,38.99,28.47,62.92,32.42,16.65,2.85,30.65-8.27,41.62-19.9,14.33-14.43,30.32-38.34,52.93-28.5,12.73,5.11,25.39,15.67,40.01,14.53,20.3-1.71,36.86-23.42,48.71-38.36,7.34-9.56,16.65-17.68,26.69-24.89" class="trend-area trend-green-area" />
             </svg>
           </div>
           <div class="metric-footnote">Compared to last week</div>
@@ -276,9 +281,16 @@
             <div class="metric-chip trend-up"><span>↗</span> 15%</div>
           </div>
           <div class="sparkline trend-chart">
-            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
-              <path d="M12 78 C72 52 108 40 152 62 C196 84 226 42 266 34 C300 26 330 14 356 22 L356 82 L12 82 Z" class="trend-area trend-blue-area" />
-              <path d="M12 78 C72 52 108 40 152 62 C196 84 226 42 266 34 C300 26 330 14 356 22" class="trend-path trend-blue" />
+            <svg viewBox="0 0 307.61 98.26" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="active-users-area-gradient" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0%" stop-color="#9bd7ff" stop-opacity="0.7" />
+                  <stop offset="45%" stop-color="#9bd7ff" stop-opacity="0.18" />
+                  <stop offset="100%" stop-color="#9bd7ff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path d="M2,64.45c28.62,0,27.71,16.54,43.67,16.54,26.91,0,36.81-9.38,59.94-9.38,17.24,0,24.13,24.65,39.64,24.65,16.96,0,26.8-34.78,50.42-34.78s30.8,10.3,44.78,10.3c18.71,0,28.45-21.15,39.74-39.39,6.99-11.67,15.86-21.59,25.42-30.39 L307.61 98.26 L2 98.26 Z" class="trend-area" style="fill: url(#active-users-area-gradient); fill-opacity: 1; stroke: none;" />
+              <path d="M2,64.45c28.62,0,27.71,16.54,43.67,16.54,26.91,0,36.81-9.38,59.94-9.38,17.24,0,24.13,24.65,39.64,24.65,16.96,0,26.8-34.78,50.42-34.78s30.8,10.3,44.78,10.3c18.71,0,28.45-21.15,39.74-39.39,6.99-11.67,15.86-21.59,25.42-30.39" class="trend-path trend-blue" />
             </svg>
           </div>
           <div class="metric-footnote">Compared to last week</div>
@@ -293,9 +305,9 @@
             <div class="metric-chip trend-down"><span>↘</span> 4%</div>
           </div>
           <div class="sparkline trend-chart">
-            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
-              <path d="M12 80 C72 48 104 72 150 42 C190 18 226 64 268 28 C302 6 330 36 356 46 L356 82 L12 82 Z" class="trend-area trend-orange-area" />
-              <path d="M12 80 C72 48 104 72 150 42 C190 18 226 64 268 28 C302 6 330 36 356 46" class="trend-path trend-orange" />
+            <svg viewBox="0 0 320.97 83.11" preserveAspectRatio="none">
+              <path d="M2,2c9.61,8.04,18.78,16.4,25.88,26.37,9.96,12.52,20.74,39.69,39.35,40.66,19.6-.54,27.38-29.77,50.91-24.89,23.58,4.95,35.22,35.03,55.9,36.96,7.42.23,13.55-3.78,19.48-7.66,7.13-4.83,15.1-10.16,24.05-11.35,20.45-3.15,40.2,14.59,59.08.21,8.45-6.25,14.69-16.69,21.38-25.1,6.12-8,13.38-15.15,20.94-22.06 L320.97 83.11 L2 83.11 Z" class="trend-area trend-orange-area" />
+              <path d="M2,2c9.61,8.04,18.78,16.4,25.88,26.37,9.96,12.52,20.74,39.69,39.35,40.66,19.6-.54,27.38-29.77,50.91-24.89,23.58,4.95,35.22,35.03,55.9,36.96,7.42.23,13.55-3.78,19.48-7.66,7.13-4.83,15.1-10.16,24.05-11.35,20.45-3.15,40.2,14.59,59.08.21,8.45-6.25,14.69-16.69,21.38-25.1,6.12-8,13.38-15.15,20.94-22.06" class="trend-path trend-orange" />
             </svg>
           </div>
           <div class="metric-footnote">Compared to last week</div>
