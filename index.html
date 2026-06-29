@@ -73,28 +73,94 @@
         margin-bottom: 20px;
       }
       .metric {
-        padding: 20px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 220px;
       }
       .metric-top {
         display: flex;
         justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .metric-label {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .metric-value {
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 10px;
+        line-height: 1;
+      }
+      .metric-chip {
+        display: inline-flex;
         align-items: center;
-      }
-      .metric .value {
-        font-size: 28px;
-        font-weight: 700;
-        margin-top: 8px;
-      }
-      .icon {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        font-size: 13px;
         font-weight: 700;
       }
-      .trend-up { color: var(--success); }
-      .trend-down { color: var(--warning); }
+      .metric-chip.trend-up {
+        background: rgba(46, 125, 50, 0.12);
+        color: var(--success);
+      }
+      .metric-chip.trend-down {
+        background: rgba(239, 108, 0, 0.12);
+        color: var(--warning);
+      }
+      .metric-chip span {
+        font-size: 14px;
+      }
+      .sparkline {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+      .trend-chart {
+        width: 100%;
+        background: transparent;
+        border-radius: 20px;
+        padding: 0;
+      }
+      .trend-chart svg {
+        width: 100%;
+        height: 90px;
+        display: block;
+      }
+      .trend-area {
+        fill-opacity: 0.22;
+      }
+      .trend-path {
+        fill: none;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .trend-green,
+      .trend-orange,
+      .trend-blue {
+        stroke: #6c63ff;
+      }
+      .trend-green-area {
+        fill: rgba(31, 171, 102, 0.16);
+      }
+      .trend-orange-area {
+        fill: rgba(242, 140, 40, 0.14);
+      }
+      .trend-blue-area {
+        fill: rgba(108, 99, 255, 0.14);
+      }
+      .metric-footnote {
+        color: var(--muted);
+        font-size: 14px;
+        letter-spacing: 0.01em;
+      }
       .content-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -165,34 +231,52 @@
         <article class="card metric">
           <div class="metric-top">
             <div>
-              <div style="color: var(--muted); font-size: 14px;">Revenue</div>
-              <div class="value">$2.4M</div>
+              <div class="metric-label">Revenue</div>
+              <div class="metric-value">$2.4M</div>
             </div>
-            <div class="icon" style="background: rgba(46, 125, 50, 0.12); color: var(--success);">$</div>
+            <div class="metric-chip trend-up"><span>↗</span> 15%</div>
           </div>
-          <div class="trend-up" style="margin-top: 10px; font-weight: 600; display: flex; align-items: center; gap: 6px;"><span style="font-size: 18px;">↗</span> 12.4% vs last period</div>
+          <div class="sparkline trend-chart">
+            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
+              <path d="M12 78 C72 44 110 68 162 44 C214 20 246 68 292 38 C328 16 340 30 356 18 L356 82 L12 82 Z" class="trend-area trend-green-area" />
+              <path d="M12 78 C72 44 110 68 162 44 C214 20 246 68 292 38 C328 16 340 30 356 18" class="trend-path trend-green" />
+            </svg>
+          </div>
+          <div class="metric-footnote">Compared to last week</div>
         </article>
 
         <article class="card metric">
           <div class="metric-top">
             <div>
-              <div style="color: var(--muted); font-size: 14px;">Active Users</div>
-              <div class="value">48.2K</div>
+              <div class="metric-label">Active Users</div>
+              <div class="metric-value">48.2K</div>
             </div>
-            <div class="icon" style="background: rgba(30, 136, 229, 0.12); color: var(--primary);">U</div>
+            <div class="metric-chip trend-up"><span>↗</span> 15%</div>
           </div>
-          <div class="trend-up" style="margin-top: 10px; font-weight: 600; display: flex; align-items: center; gap: 6px;"><span style="font-size: 18px;">↗</span> 8.1% vs last period</div>
+          <div class="sparkline trend-chart">
+            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
+              <path d="M12 78 C72 52 108 40 152 62 C196 84 226 42 266 34 C300 26 330 14 356 22 L356 82 L12 82 Z" class="trend-area trend-blue-area" />
+              <path d="M12 78 C72 52 108 40 152 62 C196 84 226 42 266 34 C300 26 330 14 356 22" class="trend-path trend-blue" />
+            </svg>
+          </div>
+          <div class="metric-footnote">Compared to last week</div>
         </article>
 
         <article class="card metric">
           <div class="metric-top">
             <div>
-              <div style="color: var(--muted); font-size: 14px;">Conversion</div>
-              <div class="value">6.8%</div>
+              <div class="metric-label">Conversion</div>
+              <div class="metric-value">6.8%</div>
             </div>
-            <div class="icon" style="background: rgba(239, 108, 0, 0.12); color: var(--warning);">C</div>
+            <div class="metric-chip trend-down"><span>↘</span> 4%</div>
           </div>
-          <div class="trend-down" style="margin-top: 10px; font-weight: 600; display: flex; align-items: center; gap: 6px;"><span style="font-size: 18px;">↘</span> 1.2% vs last period</div>
+          <div class="sparkline trend-chart">
+            <svg viewBox="0 0 360 90" preserveAspectRatio="none">
+              <path d="M12 80 C72 48 104 72 150 42 C190 18 226 64 268 28 C302 6 330 36 356 46 L356 82 L12 82 Z" class="trend-area trend-orange-area" />
+              <path d="M12 80 C72 48 104 72 150 42 C190 18 226 64 268 28 C302 6 330 36 356 46" class="trend-path trend-orange" />
+            </svg>
+          </div>
+          <div class="metric-footnote">Compared to last week</div>
         </article>
       </section>
 
