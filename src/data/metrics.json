@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "company": "FastForward Logistics",
+    "generatedAt": "2026-06-29",
+    "currency": "USD",
+    "regions": ["Northeast", "Southeast", "Midwest", "West", "Southwest"],
+    "periods": [
+      { "id": "7d", "label": "Last 7 days" },
+      { "id": "30d", "label": "Last 30 days" },
+      { "id": "90d", "label": "Last 90 days" }
+    ],
+    "exceptionTypes": ["Delayed", "Damaged", "Lost", "Customs Hold", "Address Issue"],
+    "exceptionPrevByRegion": {
+      "Northeast": 7,
+      "Southeast": 8,
+      "Midwest": 6,
+      "West": 6,
+      "Southwest": 6
+    }
+  },
+  "kpisByPeriod": {
+    "7d": {
+      "Northeast": { "volume": 1210, "onTimeRate": 91.2, "avgTransitDays": 2.8, "prev": { "volume": 1155, "onTimeRate": 90.6, "avgTransitDays": 2.9 } },
+      "Southeast": { "volume": 955, "onTimeRate": 88.4, "avgTransitDays": 3.6, "prev": { "volume": 980, "onTimeRate": 89.1, "avgTransitDays": 3.5 } },
+      "Midwest": { "volume": 885, "onTimeRate": 93.1, "avgTransitDays": 3.1, "prev": { "volume": 850, "onTimeRate": 92.4, "avgTransitDays": 3.2 } },
+      "West": { "volume": 1070, "onTimeRate": 89.7, "avgTransitDays": 4.2, "prev": { "volume": 1020, "onTimeRate": 90.2, "avgTransitDays": 4.0 } },
+      "Southwest": { "volume": 580, "onTimeRate": 90.5, "avgTransitDays": 3.9, "prev": { "volume": 560, "onTimeRate": 90.0, "avgTransitDays": 3.8 } }
+    },
+    "30d": {
+      "Northeast": { "volume": 5200, "onTimeRate": 90.8, "avgTransitDays": 2.9, "prev": { "volume": 4980, "onTimeRate": 90.1, "avgTransitDays": 3.0 } },
+      "Southeast": { "volume": 4100, "onTimeRate": 87.9, "avgTransitDays": 3.7, "prev": { "volume": 4210, "onTimeRate": 88.6, "avgTransitDays": 3.6 } },
+      "Midwest": { "volume": 3800, "onTimeRate": 92.6, "avgTransitDays": 3.2, "prev": { "volume": 3650, "onTimeRate": 92.0, "avgTransitDays": 3.2 } },
+      "West": { "volume": 4600, "onTimeRate": 89.2, "avgTransitDays": 4.3, "prev": { "volume": 4400, "onTimeRate": 89.8, "avgTransitDays": 4.1 } },
+      "Southwest": { "volume": 2500, "onTimeRate": 90.1, "avgTransitDays": 4.0, "prev": { "volume": 2420, "onTimeRate": 89.7, "avgTransitDays": 3.9 } }
+    },
+    "90d": {
+      "Northeast": { "volume": 15400, "onTimeRate": 90.5, "avgTransitDays": 3.0, "prev": { "volume": 14800, "onTimeRate": 89.9, "avgTransitDays": 3.1 } },
+      "Southeast": { "volume": 12300, "onTimeRate": 87.6, "avgTransitDays": 3.8, "prev": { "volume": 12600, "onTimeRate": 88.2, "avgTransitDays": 3.7 } },
+      "Midwest": { "volume": 11200, "onTimeRate": 92.2, "avgTransitDays": 3.3, "prev": { "volume": 10900, "onTimeRate": 91.8, "avgTransitDays": 3.3 } },
+      "West": { "volume": 13700, "onTimeRate": 88.9, "avgTransitDays": 4.4, "prev": { "volume": 13100, "onTimeRate": 89.4, "avgTransitDays": 4.2 } },
+      "Southwest": { "volume": 7450, "onTimeRate": 89.8, "avgTransitDays": 4.1, "prev": { "volume": 7200, "onTimeRate": 89.4, "avgTransitDays": 4.0 } }
+    }
+  },
+  "volumeTrend": {
+    "7d": [
+      { "label": "Mon", "byRegion": { "Northeast": 165, "Southeast": 130, "Midwest": 120, "West": 145, "Southwest": 78 } },
+      { "label": "Tue", "byRegion": { "Northeast": 178, "Southeast": 142, "Midwest": 130, "West": 158, "Southwest": 86 } },
+      { "label": "Wed", "byRegion": { "Northeast": 172, "Southeast": 138, "Midwest": 128, "West": 152, "Southwest": 82 } },
+      { "label": "Thu", "byRegion": { "Northeast": 180, "Southeast": 140, "Midwest": 131, "West": 160, "Southwest": 85 } },
+      { "label": "Fri", "byRegion": { "Northeast": 175, "Southeast": 137, "Midwest": 127, "West": 155, "Southwest": 83 } },
+      { "label": "Sat", "byRegion": { "Northeast": 162, "Southeast": 128, "Midwest": 118, "West": 142, "Southwest": 80 } },
+      { "label": "Sun", "byRegion": { "Northeast": 178, "Southeast": 140, "Midwest": 131, "West": 158, "Southwest": 86 } }
+    ],
+    "30d": [
+      { "label": "Wk 1", "byRegion": { "Northeast": 1250, "Southeast": 1010, "Midwest": 930, "West": 1120, "Southwest": 610 } },
+      { "label": "Wk 2", "byRegion": { "Northeast": 1320, "Southeast": 1040, "Midwest": 960, "West": 1170, "Southwest": 630 } },
+      { "label": "Wk 3", "byRegion": { "Northeast": 1290, "Southeast": 1030, "Midwest": 955, "West": 1150, "Southwest": 625 } },
+      { "label": "Wk 4", "byRegion": { "Northeast": 1340, "Southeast": 1020, "Midwest": 955, "West": 1160, "Southwest": 635 } }
+    ],
+    "90d": [
+      { "label": "Apr", "byRegion": { "Northeast": 5000, "Southeast": 4200, "Midwest": 3650, "West": 4450, "Southwest": 2400 } },
+      { "label": "May", "byRegion": { "Northeast": 5150, "Southeast": 4100, "Midwest": 3750, "West": 4600, "Southwest": 2480 } },
+      { "label": "Jun", "byRegion": { "Northeast": 5250, "Southeast": 4000, "Midwest": 3800, "West": 4650, "Southwest": 2570 } }
+    ]
+  },
+  "exceptions": [
+    { "id": "FF-49012", "region": "Northeast", "type": "Delayed", "severity": "High", "ageDays": 4, "status": "Open", "lane": "Boston, MA → Albany, NY" },
+    { "id": "FF-49027", "region": "Northeast", "type": "Delayed", "severity": "Medium", "ageDays": 2, "status": "Open", "lane": "Newark, NJ → Pittsburgh, PA" },
+    { "id": "FF-49039", "region": "Northeast", "type": "Customs Hold", "severity": "Medium", "ageDays": 6, "status": "Open", "lane": "Montreal, QC → Buffalo, NY" },
+    { "id": "FF-49051", "region": "Northeast", "type": "Damaged", "severity": "High", "ageDays": 3, "status": "Open", "lane": "Philadelphia, PA → Hartford, CT" },
+    { "id": "FF-49063", "region": "Northeast", "type": "Address Issue", "severity": "Low", "ageDays": 1, "status": "Open", "lane": "Providence, RI → Portland, ME" },
+    { "id": "FF-49074", "region": "Northeast", "type": "Delayed", "severity": "Low", "ageDays": 5, "status": "Open", "lane": "Baltimore, MD → Syracuse, NY" },
+    { "id": "FF-49088", "region": "Southeast", "type": "Delayed", "severity": "High", "ageDays": 7, "status": "Open", "lane": "Atlanta, GA → Miami, FL" },
+    { "id": "FF-49095", "region": "Southeast", "type": "Delayed", "severity": "Medium", "ageDays": 3, "status": "Open", "lane": "Charlotte, NC → Jacksonville, FL" },
+    { "id": "FF-49101", "region": "Southeast", "type": "Damaged", "severity": "High", "ageDays": 5, "status": "Open", "lane": "Nashville, TN → Birmingham, AL" },
+    { "id": "FF-49112", "region": "Southeast", "type": "Customs Hold", "severity": "High", "ageDays": 9, "status": "Open", "lane": "Savannah, GA → San Juan, PR" },
+    { "id": "FF-49123", "region": "Southeast", "type": "Delayed", "severity": "Medium", "ageDays": 4, "status": "Open", "lane": "Orlando, FL → Charleston, SC" },
+    { "id": "FF-49131", "region": "Southeast", "type": "Address Issue", "severity": "Low", "ageDays": 2, "status": "Open", "lane": "Raleigh, NC → Columbia, SC" },
+    { "id": "FF-49140", "region": "Southeast", "type": "Lost", "severity": "High", "ageDays": 11, "status": "Open", "lane": "Memphis, TN → Mobile, AL" },
+    { "id": "FF-49148", "region": "Southeast", "type": "Delayed", "severity": "High", "ageDays": 6, "status": "Open", "lane": "Tampa, FL → Atlanta, GA" },
+    { "id": "FF-49155", "region": "Southeast", "type": "Damaged", "severity": "Medium", "ageDays": 3, "status": "Open", "lane": "Louisville, KY → Knoxville, TN" },
+    { "id": "FF-49167", "region": "Midwest", "type": "Delayed", "severity": "Medium", "ageDays": 2, "status": "Open", "lane": "Chicago, IL → Detroit, MI" },
+    { "id": "FF-49178", "region": "Midwest", "type": "Delayed", "severity": "Low", "ageDays": 4, "status": "Open", "lane": "Columbus, OH → Indianapolis, IN" },
+    { "id": "FF-49186", "region": "Midwest", "type": "Damaged", "severity": "Medium", "ageDays": 5, "status": "Open", "lane": "Milwaukee, WI → Minneapolis, MN" },
+    { "id": "FF-49194", "region": "Midwest", "type": "Address Issue", "severity": "Low", "ageDays": 1, "status": "Open", "lane": "Kansas City, MO → Omaha, NE" },
+    { "id": "FF-49203", "region": "Midwest", "type": "Delayed", "severity": "High", "ageDays": 8, "status": "Open", "lane": "Cleveland, OH → St. Louis, MO" },
+    { "id": "FF-49215", "region": "West", "type": "Delayed", "severity": "High", "ageDays": 6, "status": "Open", "lane": "Los Angeles, CA → Phoenix, AZ" },
+    { "id": "FF-49224", "region": "West", "type": "Customs Hold", "severity": "High", "ageDays": 10, "status": "Open", "lane": "Seattle, WA → Vancouver, BC" },
+    { "id": "FF-49233", "region": "West", "type": "Delayed", "severity": "Medium", "ageDays": 3, "status": "Open", "lane": "Oakland, CA → Portland, OR" },
+    { "id": "FF-49241", "region": "West", "type": "Damaged", "severity": "High", "ageDays": 4, "status": "Open", "lane": "Denver, CO → Salt Lake City, UT" },
+    { "id": "FF-49250", "region": "West", "type": "Delayed", "severity": "Medium", "ageDays": 5, "status": "Open", "lane": "San Diego, CA → Las Vegas, NV" },
+    { "id": "FF-49258", "region": "West", "type": "Delayed", "severity": "Low", "ageDays": 2, "status": "Open", "lane": "Sacramento, CA → Reno, NV" },
+    { "id": "FF-49266", "region": "West", "type": "Customs Hold", "severity": "Medium", "ageDays": 7, "status": "Open", "lane": "Tacoma, WA → Calgary, AB" },
+    { "id": "FF-49275", "region": "Southwest", "type": "Customs Hold", "severity": "High", "ageDays": 9, "status": "Open", "lane": "El Paso, TX → Albuquerque, NM" },
+    { "id": "FF-49283", "region": "Southwest", "type": "Delayed", "severity": "Medium", "ageDays": 3, "status": "Open", "lane": "Dallas, TX → Oklahoma City, OK" },
+    { "id": "FF-49291", "region": "Southwest", "type": "Delayed", "severity": "High", "ageDays": 6, "status": "Open", "lane": "Houston, TX → Austin, TX" },
+    { "id": "FF-49298", "region": "Southwest", "type": "Address Issue", "severity": "Low", "ageDays": 2, "status": "Open", "lane": "Tulsa, OK → Wichita, KS" },
+    { "id": "FF-49305", "region": "Southwest", "type": "Delayed", "severity": "Medium", "ageDays": 4, "status": "Open", "lane": "San Antonio, TX → Laredo, TX" }
+  ]
+}
