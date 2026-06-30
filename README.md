@@ -1,22 +1,4 @@
-# FastForward Ops — Executive Dashboard
 
-An internal executive dashboard prototype for the (fictional) **FastForward Logistics**
-operations team. It gives the VP of Operations a single, scannable view of shipment
-volume, on-time delivery, regional performance, and open exceptions for leadership
-meetings.
-
-See [BRIEF.md](BRIEF.md) for the full design spec (the source of truth for scope).
-
-## Features
-
-- **Executive KPI Dashboard** — Real-time overview of key performance indicators including on-time delivery rate, average shipment value, and monthly revenue
-- **Shipment Volume Trends** — Interactive chart visualizing shipment volume over time with clear trend indicators
-- **Regional Performance Matrix** — Multi-region breakdown showing on-time delivery, average shipment value, and volume by region
-- **Open Exceptions Tracking** — Dedicated table for monitoring active issues and exceptions across the operations network
-- **Dynamic Filtering** — Region and time period filters to drill down into specific operational areas and time windows
-- **Exportable CSV** — Download filtered metrics and performance data as CSV that dynamically updates based on Region and Period selections
-- **Responsive Design** — Clean, scannable layout optimized for executive leadership meetings and quick decision-making
-- **Mock Data Integration** — Pre-populated with realistic operations metrics for prototype and demo purposes
 
 ## Tech stack
 
