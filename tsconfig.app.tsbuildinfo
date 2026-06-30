@@ -1,0 +1,1 @@
+{"root":["./env.d.ts","./src/app.vue","./src/main.ts","./src/components/exceptionstable.vue","./src/components/metriccard.vue","./src/components/regionalperformance.vue","./src/components/volumetrendchart.vue","./src/lib/metrics.ts","./src/router/index.ts","./src/views/dashboardview.vue"],"errors":true,"version":"6.0.3"}
