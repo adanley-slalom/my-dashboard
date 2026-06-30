@@ -1,4 +1,25 @@
+# BRIEF.md — FastForward Logistics Executive Dashboard
 
+## Summary
+
+**Client:** FastForward Logistics — a mid-size freight and supply chain company.
+
+**Stakeholder:** VP of Operations.
+
+**Problem:** The operations team runs the business out of scattered spreadsheets.
+There is no single, trustworthy view of how the business is performing. Leadership
+meetings waste time reconciling numbers instead of making decisions.
+
+**Goal:** Ship a single internal **executive dashboard** the VP can pull up live in
+leadership meetings to answer, at a glance: *Are we shipping enough, on time, in the
+right regions, and what's on fire right now?*
+
+**Audience:** Executives and ops leadership. Non-technical. Reading the screen on a
+projector or a shared laptop. Clarity and scannability beat density.
+
+**Success looks like:** In under 10 seconds, a viewer can read the four headline
+numbers, spot whether each is trending up or down, see which regions are strong or
+weak, and identify the open exceptions that need attention.
 
 ---
 
