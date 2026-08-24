@@ -1,0 +1,12 @@
+
+> fastforward-dashboard@0.0.0 dev
+> vite --host 0.0.0.0 --port 4173 --strictPort
+
+10:37:33 AM [vite] (client) Re-optimizing dependencies because lockfile has changed
+error when starting dev server:
+Error: Port 4173 is already in use
+    at httpServerStart (file:///Users/aarondanley/Library/CloudStorage/OneDrive-Slalom/Desktop/Protogen/executive-dashboard/my-dashboard/node_modules/vite/dist/node/chunks/node.js:11681:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async startServer (file:///Users/aarondanley/Library/CloudStorage/OneDrive-Slalom/Desktop/Protogen/executive-dashboard/my-dashboard/node_modules/vite/dist/node/chunks/node.js:26694:30)
+    at async Object.listen (file:///Users/aarondanley/Library/CloudStorage/OneDrive-Slalom/Desktop/Protogen/executive-dashboard/my-dashboard/node_modules/vite/dist/node/chunks/node.js:26511:4)
+    at async CAC.<anonymous> (file:///Users/aarondanley/Library/CloudStorage/OneDrive-Slalom/Desktop/Protogen/executive-dashboard/my-dashboard/node_modules/vite/dist/node/cli.js:721:3)
